@@ -13,7 +13,42 @@ const questions = [
     name: "description",
     message: "Provide a description for your project:",
   },
-  // Add more questions following the same format
+  {
+    type: "input",
+    name: "installation",
+    message: "Provide installation instructions for your project:",
+  },
+  {
+    type: "input",
+    name: "usage",
+    message: "Provide usage instructions for your project:",
+  },
+  {
+    type: "list",
+    name: "license",
+    message: "Choose a license for your project:",
+    choices: ["MIT", "GPLv3", "Apache-2.0", "BSD-3-Clause", "None"],
+  },
+  {
+    type: "input",
+    name: "contributing",
+    message: "Provide contribution guidelines for your project:",
+  },
+  {
+    type: "input",
+    name: "tests",
+    message: "Provide test instructions for your project:",
+  },
+  {
+    type: "input",
+    name: "githubUsername",
+    message: "Enter your GitHub username:",
+  },
+  {
+    type: "input",
+    name: "email",
+    message: "Enter your email address:",
+  },
 ];
 
 function writeToFile(fileName, data) {
